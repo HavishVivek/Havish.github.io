@@ -5,7 +5,7 @@
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YJPL/supply/"
+    "url": "git+https://github.com/YJPL/supply.git"
   },
   "keywords": [
     "css",
@@ -31,10 +31,7 @@
     "uglify-js": "^3.17.4"
   },
   "contributors": [
-    {
-      "name": "YJPL",
-      "email": ""
-    }
+    "YJPL"
   ],
   "scripts": {
     "start": "npm run build && npm run serve:jekyll",
@@ -43,5 +40,16 @@
     "build": "npm run build:css && npm run minify:css",
     "build:css": "postcss src/sup-tachyons.css > assets/css/sup-tachyons.css",
     "minify:css": "postcss assets/css/sup-tachyons.css > assets/css/sup-tachyons.min.css  --use cssnano"
+  },
+  "homepage": "https://github.com/YJPL/supply#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22"
   }
 }
