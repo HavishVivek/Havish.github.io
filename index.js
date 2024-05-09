@@ -1,5 +1,5 @@
 const express = require("express");
-const db = require("./routes/db-config");
+const db = require("db-config");
 const app = express();
 const cookie = require("cookie-parser");
 const PORT = process.env.PORT || 5000;
@@ -13,4 +13,5 @@ db.connect((err) => {
   if (err) throw err;
   console.log("Mysql Connected...");
 });
+app.use("/", require("./routes/pages"));
 app.listen(PORT);
