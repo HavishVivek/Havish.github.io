@@ -13,4 +13,6 @@ db.connect((err) => {
   if (err) throw err;
   console.log("Mysql Connected...");
 });
+app.use("/", require("./routes/pages"));
+// app.use("/api",) /api/register
 app.listen(PORT);
