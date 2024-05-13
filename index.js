@@ -14,5 +14,5 @@ db.connect((err) => {
   console.log("Mysql Connected...");
 });
 app.use("/", require("./routes/pages"));
-// app.use("/api",) /api/register
+app.use("/api", require("./controllers/auth"));
 app.listen(PORT);
