@@ -51,6 +51,7 @@
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.22",
-    "stack": "^0.1.0"
+    "stack": "^0.1.0",
+    "stripe": "^15.8.0"
   }
 }
